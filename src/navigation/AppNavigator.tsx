@@ -7,7 +7,8 @@ import { HomeScreen } from '../screens/HomeScreen';
 import { ScanScreen } from '../screens/ScanScreen';
 import { PreviewScreen } from '../screens/PreviewScreen';
 import { SaveScreen } from '../screens/SaveScreen';
-import { DocumentScreen } from '../screens/DocumentScreen';
+import { DocumentsScreen } from '../screens/DocumentsScreen';
+
 
 export type RootStackParamList = {
   Home: undefined;
@@ -22,12 +23,12 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Scan">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Scan" component={ScanScreen} />
         <Stack.Screen name="Preview" component={PreviewScreen} />
         <Stack.Screen name="Save" component={SaveScreen} />
-        <Stack.Screen name="Documents" component={DocumentScreen} />
+        <Stack.Screen name="Documents" component={DocumentsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

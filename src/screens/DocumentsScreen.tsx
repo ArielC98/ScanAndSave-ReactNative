@@ -1,10 +1,10 @@
 import { View, Text } from "react-native"
 
 
-export const DocumentScreen = () => {
+export const DocumentsScreen = () => {
   return (
     <View>
-      <Text>DocumentScreen</Text>
+      <Text>DocumentsScreen</Text>
     </View>
   )
 }
